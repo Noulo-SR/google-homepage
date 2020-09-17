@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GUGUEL</title>
+    <title>Google</title>
     <style>
+        body {
+            background-color: white;
+            display: grid;
+            grid-template-rows: repeat(3, 305px);
+        }
+        
+        .main-section {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
 
+        }
+        
+        .logo {
+            display: flex;
+            width: auto;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div><img src="https://static2.abc.es/Media/201509/01/historia-del-logotipo-de-Google--644x362.jpg" alt="Logo de Google"></div>
-        <div>
-            <input type="text" placeholder="Search">
-        </div>
-    </header>
+    <header></header>
+    <main class="main-section">
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo de Google">
+        <input type="text" placeholder="Search">       
+    </main>
+    <footer></footer>
 </body>
 </html>
