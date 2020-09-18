@@ -2,8 +2,10 @@
 <html>
 <head>
     <title>Google</title>
+
+    <!--Pues este es mi viejo codigo. Tiene muchas cosas malas, pero no estuvo tan fuera de lugar como pensé-->
     <style>
-        body {
+        body { /* este el el body, duh. Puse margenes y todo en cero, porque creo que de algo sirve pero aun no se de que */
             background-color: white;
             margin-top: 0;
             margin-bottom: 0;
@@ -13,7 +15,7 @@
             grid-template-rows: repeat(3, 305px);
         }
         
-        .main-section {
+        .main-section { /* Aquí agregué flex a toda el area del centro, es decir el logo y los botones y las barras y demás */
             background-color: white;
             display: flex;
             flex-direction: column;
@@ -25,15 +27,15 @@
         .logo {
             display: flex;
             width: auto;
-            
+            /* Aqui añadí flex al logo y eliminé los margenes y el pading y demás, para que ocupara solo el espacio necesario (creo, podría ser una cagada de uso) */
             margin: 0px;
             padding: 0px;
-            border: 0px;
+            border: 0px; 
             height: 100%px;
         
         }
 
-        .grid {
+        .grid { /* Con esta clase creé una cuadrícula para el header y el footer(que ahora solo es un div) y asi poder colocar los links que quería */
             display: grid;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: repeat(3, 1fr);
@@ -41,7 +43,7 @@
         }
 
 
-        .top {
+        .top { /* Creo que esta clase la quería usar para alinear y justificar los elementos de la clase de .grid, pero no lo hice */
             justify-content: flex-start;
             align-items: flex-end   ;
         }
