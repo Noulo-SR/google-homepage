@@ -6,10 +6,19 @@
         
         .header {
             position:absolute;
-            right: 0px;
-            top: 0px;
+            display: flex;
+            right: 9px;
+            top: 5px;
             font-family: sans-serif;
-            font-size: 18px;
+            font-size: 14px;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: #333;
+
         }
 
         .sign-in {
@@ -17,9 +26,10 @@
             background-color: #1a75ff;
             color: #fff;
             height: 40px;
-            width: auto;
+            width: 90px;
             font-family: sans-serif;
-            font-weight: 530;
+            font-size: 15px;
+            font-weight: 510;
         }
 
         .main {
@@ -29,6 +39,88 @@
             position: relative;
             top: 300px;
             font-family: sans-serif;
+            gap: 30px;
+        }
+
+        #apps-icon {
+            height: 18px;
+            width: 18px;
+        }
+
+        #logo {
+            height: 110px;
+        }
+        
+        .search-bar {
+            height: 40px;
+            width: 550px;
+        }
+
+        .search-buttons {
+            height: 50px;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        .footer {
+            vertical-align: middle;
+            line-height: 33px;   
+            text-decoration: none;
+        }
+
+        .footer a {
+            position: relative;
+            margin-top: 15px;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size: 14px;
+            color: #555;
+            text-decoration: none;
+
+            
+        }
+
+        .bottom-lang {
+            position: absolute;
+            bottom: 35px;
+            left: 0px;
+            background-color: #EEE;
+            width: 99.87%;
+            height: 35px; 
+            border: 1px;
+            border-color: #DDD;  
+            border-style: solid;;
+        }
+
+        .bottom-lang a {
+            position: relative;
+            margin-top: 15px;
+            margin-left: 15px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .bottom-links-left {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            background-color: #EEE;
+            width:99.87%;
+            height: 35px;
+            border: 1px;
+            border-color: #DDD;  
+            border-style: solid;;
+        }
+
+        .bottom-links-right {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            background-color: #EEE;
+            width: 12%;
+            height: 35px;
+            text-decoration: none;
+            
         }
 
     </style>
@@ -37,17 +129,17 @@
     <div class="header">
         <a href="#">Gmail</a>
         <a href="#">Images</a>
-        <img src="#" alt="Google apps">
+        <img id="apps-icon" src="https://icon-library.com/images/google-apps-icon-png/google-apps-icon-png-28.jpg" alt="Google apps">
         <button class="sign-in">Sign In</button>
     </div>
     <div class="main">
-        <div class="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"></div>
-        <div class="search-bar">
-            <input type="text" name="search bar" placeholder="Search...">
+        <div class="logo"><img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"></div>
+        <div >
+            <input class="search-bar" type="text" name="search bar" placeholder="Search...">
         </div>
-        <div class=search-buttons>
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
+        <div>
+            <button class="search-buttons">Google Search</button>
+            <button class="search-buttons">I'm Feeling Lucky</button>
         </div>
         <div class="language">
             Google offered in: 
@@ -55,12 +147,14 @@
         </div>
     </div>
     <div class="footer">
-        <div><a href="#">Venezuela</a></div>
-        <div class="bottom-links">
+        <div class="bottom-lang"><a href="#">Venezuela</a></div>
+        <div class="bottom-links-left">
             <a href="#">Advertising</a>
             <a href="#">Business</a>
             <a href="#">About</a>
             <a href="#">How Search works</a>
+        </div>
+        <div class="bottom-links-right">
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
             <a href="#">Settings</a>
